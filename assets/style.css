@@ -85,6 +85,7 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
 }
 #about-me p {
 	width: 80%;
@@ -97,6 +98,7 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: 1.75rem;
 }
 .gallery .nav {
 	justify-content: center;
@@ -214,7 +216,9 @@ body {
 }
 .form-container {
 	flex : 2;
-
+}
+.form-container h1 {
+	font-size: 1.75rem;
 }
 form {
 	display: flex;
@@ -244,7 +248,25 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+.service__description h2 {
+	font-size: 1.75rem;
+}
 
+.service__price h3 {
+	font-size: 1.5rem;
+}
+
+@media (max-width:1200px) {
+	.title {
+		font-size: calc(1.3rem + 0.6vw);
+	}
+	.form-container h1 {
+		font-size: calc(1.3rem + 0.6vw);
+	}
+	.service__price h3 {
+		font-size: calc(1.275rem + 0.3vw);
+	}
+}
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -257,6 +279,9 @@ input[type="submit"] {
 		margin-bottom: 1em;
 	}
 	#about-me h6, #about-me p {
+		width: 100%;
+	}
+	.about-me__introduction {
 		width: 100%;
 	}
 }
@@ -294,7 +319,12 @@ input[type="submit"] {
 	.service__description{
 		margin-bottom: 1em;
 	}
-
+	.service__description h1 {
+		font-size: 1.75rem;
+	}
+	.service__description h2 {
+		font-size: calc(1.3rem + 0.6vw);
+	}
 	#services .container::before{
 		width: 30%;
 		height: 100%;
