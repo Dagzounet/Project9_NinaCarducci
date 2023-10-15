@@ -31,6 +31,59 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "ProfessionalService",
+		  "name": "Nina Carducci Photographe Professionnelle",
+		  "image" : "https://dagzounet.github.io/Project9_NinaCarducci/assets/images/nina-400w.webp",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressRegion": "Nouvelle-Aquitaine",
+			"addressCountry": "France"
+		  },
+		  "telephone": "+33 5 56 67 78 89",
+		  "openingHours": "Mo-Fr 10:00-19:00",
+		  "priceRange" : "50€ à 400€",
+		  "serviceType": [
+    {
+      "@type": "Service",
+      "name": "Shooting photo",
+      "description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos",
+      "offers": {
+        "@type": "Offer",
+        "price": "350",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Retouches",
+      "description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications",
+      "offers": {
+        "@type": "Offer",
+        "price": "50",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Album photos",
+      "description": "Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé",
+      "offers": {
+        "@type": "Offer",
+        "price": "400",
+        "priceCurrency": "EUR"
+      }
+    }
+  ]
+}
+		</script>
+		
 </head>
 <body>
 <div class="top-header">
