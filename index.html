@@ -10,17 +10,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-<<<<<<< HEAD
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-	<script src="./assets/maugallery.js" async></script>
-	<script src="./assets/scripts.js" async></script>
-=======
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
->>>>>>> parent of 36e83c5 (#13 - set js script on async to enhance performance)
 </head>
 <body>
 <div class="top-header">
@@ -185,7 +178,9 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="un appareil photo professionnel">
+			<img src="./assets/images/camera.webp"
+			srcset="./assets/images/camera.webp 1920w, 
+			./assets/images/camera-400w.webp 800w" alt="un appareil photo professionnel">
 		</div>
 	</div>
 </div>
